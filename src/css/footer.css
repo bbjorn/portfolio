@@ -1,0 +1,43 @@
+.footer {
+  background-color: rgb(235, 240, 245);
+  padding: 0 0 60px 0;
+  width: 100%;
+  height: 140px;
+  margin-top: -140px;
+}
+.footer-inside {
+  margin: 0 auto;
+  padding: 0;
+  width: 50%;
+  list-style-type: none;
+}
+
+.footer-icon {
+  height: 18pt;
+  width: 18pt;
+  margin-right: 8px;
+  /* The lines below makes sure that the image is square*/
+  object-fit: cover;
+  object-position: 0% 0;
+}
+
+.footer-li {
+  display: flex;
+  align-items: center;
+  margin: 6px 0px;
+}
+
+.footer-text {
+  color: #444444;
+  font-family: "bree_serifregular", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.footer-copyright-link {
+  color: rgb(145, 160, 175);
+  font-family: "bree_serifregular", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  font-style: italic;
+}

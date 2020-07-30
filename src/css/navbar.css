@@ -1,0 +1,36 @@
+/* Navbar menu */
+.navbar {
+  background-color: rgb(145, 160, 175);
+  padding: 8px 0px;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  position: -webkit-sticky; /* safari */
+  position: sticky;
+}
+
+/*
+.navbar-collapse {
+  background-color: aqua;
+}
+*/
+/*
+.navbar-nav {
+  background-color: brown;
+}
+*/
+.nav-item {
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: rgb(135, 150, 165);
+  text-decoration: none;
+}
+
+.active {
+  background-color: rgb(155, 175, 190);
+}

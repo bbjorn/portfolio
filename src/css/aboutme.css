@@ -1,0 +1,50 @@
+.aboutMe-img {
+  width: 100%;
+}
+
+.aboutme-img-grid-container {
+  display: grid;
+  grid-template-columns: 65% auto;
+  grid-template-areas: "aboutme-img-left aboutme-img-right";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.aboutme-img-left {
+  grid-area: aboutme-img-left;
+}
+
+.aboutme-img-right {
+  grid-area: aboutme-img-right;
+}
+
+.aboutme-title-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "aboutme-title-left aboutme-title-right";
+}
+
+.aboutme-title-left {
+  grid-area: aboutme-title-left;
+}
+
+.aboutme-title-right {
+  grid-area: aboutme-title-right;
+}
+
+.aboutme-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.2em;
+  grid-template-areas: "aboutme-left aboutme-right";
+}
+
+.aboutme-left {
+  grid-area: aboutme-left;
+}
+
+.aboutme-right {
+  grid-area: aboutme-right;
+}
