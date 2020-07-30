@@ -26,7 +26,7 @@ function App() {
             <Switch>
               <Route path="/portfolio/design" component={Design} />
               <Route path="/portfolio/code" component={Code} />
-              <Rounpte path="/portfolio/aboutme" component={AboutMe} />
+              <Route path="/portfolio/aboutme" component={AboutMe} />
               <Route path="/portfolio/start" component={FrontPage} />
               <Route path="/portfolio/notfound" component={NotFound} />
               <Redirect
