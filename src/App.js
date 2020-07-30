@@ -26,9 +26,14 @@ function App() {
             <Switch>
               <Route path="/portfolio/design" component={Design} />
               <Route path="/portfolio/code" component={Code} />
-              <Route path="/portfolio/aboutme" component={AboutMe} />
+              <Rounpte path="/portfolio/aboutme" component={AboutMe} />
               <Route path="/portfolio/start" component={FrontPage} />
               <Route path="/portfolio/notfound" component={NotFound} />
+              <Redirect
+                from="/portfolio/index.html"
+                exact
+                to="/portfolio/start"
+              />
               <Redirect from="/portfolio/" exact to="/portfolio/start" />
               <Redirect to="/portfolio/notfound" />
             </Switch>
