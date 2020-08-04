@@ -7,7 +7,7 @@ function Navbar(props) {
     <nav className="navbar">
       <div className="navbar-collapse">
         <div className="navbar-nav">
-          <NavLink className="nav-item nav-link" to="/portfolio/">
+          <NavLink className="nav-item nav-link" exact to="/portfolio/">
             Start
           </NavLink>
           <NavLink className="nav-item nav-link" to="/portfolio/aboutme">
