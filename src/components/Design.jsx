@@ -19,14 +19,12 @@ function createDesignElement(designElement) {
           <p> Problem - {designElement.problem}</p>
           <p> Design - {designElement.design}</p>
           <p> Role - {designElement.role}</p>
-          <p>
-            Responsibilities:
-            <ol>
-              {designElement.responsibilities.map((value) => (
-                <li>{value}</li>
-              ))}
-            </ol>
-          </p>
+          <p>Responsibilities:</p>
+          <ol>
+            {designElement.responsibilities.map((value) => (
+              <li>{value}</li>
+            ))}
+          </ol>
         </div>
         <div className="design-side-right">
           <img
