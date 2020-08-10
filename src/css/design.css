@@ -16,7 +16,10 @@
 }
 
 .design-side-img {
+  display: block;
   width: 100%;
+  max-height: 500px;
+  object-fit: contain;
 }
 
 /* double */
@@ -38,6 +41,8 @@
 .design-double-img {
   width: 70%;
   align-self: center;
+  max-height: 500px;
+  object-fit: contain;
 }
 
 /* top */
@@ -47,6 +52,8 @@
   margin-right: auto;
   margin-bottom: 1em;
   width: 90%;
+  max-height: 500px;
+  object-fit: contain;
 }
 
 /* Misc */
