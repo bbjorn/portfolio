@@ -11,7 +11,7 @@ function Design(props) {
 
 function createDesignElement(designElement) {
   return (
-    <div className="mainstyle-inner">
+    <div className="mainstyle-inner" key={designElement._id}>
       <h2 className="h2-box"> {designElement.title} </h2>
       <div className="design-side-grid-container">
         <div className="design-side-left">
@@ -21,8 +21,8 @@ function createDesignElement(designElement) {
           <p> Role - {designElement.role}</p>
           <p>Responsibilities:</p>
           <ol>
-            {designElement.responsibilities.map((value) => (
-              <li>{value}</li>
+            {designElement.responsibilities.map((value, index) => (
+              <li key={index}>{value}</li>
             ))}
           </ol>
         </div>
@@ -46,7 +46,7 @@ function createDesignElement(designElement) {
 
 function createDesignEntry(designEntry, title) {
   return (
-    <React.Fragment>
+    <React.Fragment key={designEntry._id}>
       <h2 className="h2-box"> {title + " - " + designEntry.title} </h2>
       {designEntry.layout === "double" && createDesignEntryDouble(designEntry)}
       {designEntry.layout === "top" && createDesignEntryTop(designEntry)}
@@ -58,8 +58,8 @@ function createDesignEntry(designEntry, title) {
 function createDesignEntryDouble(designEntry) {
   return (
     <div className="design-double-grid-container">
-      {designEntry.parts.map((value) => (
-        <React.Fragment>
+      {designEntry.parts.map((value, index) => (
+        <React.Fragment key={index}>
           <div style={{ order: -1 }}>
             <img
               src={value.image}
@@ -68,8 +68,8 @@ function createDesignEntryDouble(designEntry) {
             />
           </div>
           <div>
-            {value.text.map((textvalue) => (
-              <p>{textvalue}</p>
+            {value.text.map((textvalue, index) => (
+              <p key={index}>{textvalue}</p>
             ))}
             {value.link && <a href={value.link}>{value.link}</a>}
           </div>
@@ -83,14 +83,14 @@ function createDesignEntryTop(designEntry) {
   return (
     <div className="design-top-grid-container">
       {designEntry.parts.map((value) => (
-        <React.Fragment>
+        <React.Fragment key={value._id}>
           <img
             src={value.image}
             alt={value.imageAlt}
             className="design-top-img"
           />
-          {value.text.map((textvalue) => (
-            <p>{textvalue}</p>
+          {value.text.map((textvalue, index) => (
+            <p key={index}>{textvalue}</p>
           ))}
           {value.link && <a href={value.link}>{value.link}</a>}
         </React.Fragment>
@@ -103,10 +103,10 @@ function createDesignEntrySide(designEntry) {
   return (
     <div className="design-side-grid-container">
       {designEntry.parts.map((value) => (
-        <React.Fragment>
+        <React.Fragment key={value._id}>
           <div className="design-side-left">
-            {value.text.map((textvalue) => (
-              <p>{textvalue}</p>
+            {value.text.map((textvalue, index) => (
+              <p key={index}>{textvalue}</p>
             ))}
             {value.link && <a href={value.link}>{value.link}</a>}
           </div>

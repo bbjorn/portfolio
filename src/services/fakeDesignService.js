@@ -52,6 +52,7 @@ const DesignPortfolio = [
         layout: "double", //top, side, double
         parts: [
           {
+            _id: 110,
             image: rpQuestionaire,
             imagealt: "A screenshot of a questionnaire used during the project",
             text: [
@@ -59,6 +60,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 111,
             image: rpUniverseum,
             imagealt: "A photo of the science centre where we did the project",
 
@@ -74,6 +76,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 120,
             image: rpExhibit,
             imagealt: "A photo of the Robo Pop exhibition",
             text: [
@@ -81,6 +84,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 121,
             image: rpProgramming,
             imagealt: "A photo of someone programming a drum for Robo Pop",
             text: [
@@ -95,6 +99,7 @@ const DesignPortfolio = [
         layout: "top",
         parts: [
           {
+            _id: 130,
             image: rpFinished,
             imagealt: "A photo of the Robo Pop exhibition",
             text: [
@@ -132,6 +137,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 210,
             image: tbWhiteBoard,
             imagealt: "A picture of a whiteboard",
             text: [
@@ -139,6 +145,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 211,
             image: tbDesignProcess,
             imagealt:
               "A picture of a design process dawn on paper and sticky notes",
@@ -154,6 +161,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 220,
             image: tbSurvey,
             imagealt: "A picture of a survey",
             text: [
@@ -161,6 +169,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 221,
             image: tbTrainStation,
             imagealt: "A picture of a trainstation",
             text: [
@@ -175,6 +184,7 @@ const DesignPortfolio = [
         layout: "top",
         parts: [
           {
+            _id: 230,
             image: tbLogo,
             imagealt: "The logo of the TrainBuddy project",
             text: [
@@ -206,6 +216,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 310,
             image: accessCompAnalys,
             imagealt: "An image displaying a tool to compare brands",
             text: [
@@ -213,6 +224,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 311,
             image: accessBrandPlatform,
             imagealt: "An image displaying the brand platform tool",
             text: [
@@ -227,6 +239,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 320,
             image: accessPersonas,
             imagealt:
               "An image displaying pictures used for personas during the Access project",
@@ -235,6 +248,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 321,
             image: accessCustomerJourney,
             imagealt: "A screenshot of a customer journey.",
             text: [
@@ -249,6 +263,7 @@ const DesignPortfolio = [
         layout: "side",
         parts: [
           {
+            _id: 330,
             image: accessApp,
             imagealt:
               "A high fidelity image of the starting screen of the Access app made in illustrator",
@@ -281,6 +296,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 410,
             image: pcWhiteboard,
             imagealt:
               "A photo of one of the whiteboards used during this project.",
@@ -289,6 +305,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 411,
             image: pcSketches,
             imagealt:
               "A photo of some of the sketches made during the project.",
@@ -304,6 +321,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 420,
             image: pcLowFi,
             imagealt: "Three low-fi prototypes side by side.",
             text: [
@@ -311,6 +329,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 421,
             image: pcHiFi,
             imagealt: "The hi-fi prototype displayed in a classroom.",
             text: [
@@ -325,6 +344,7 @@ const DesignPortfolio = [
         layout: "double",
         parts: [
           {
+            _id: 430,
             image: pcComputer,
             imagealt: "A computer used simulate the collections of data.",
             text: [
@@ -332,6 +352,7 @@ const DesignPortfolio = [
             ],
           },
           {
+            _id: 431,
             image: pcEvaluation,
             imagealt: "The evaluation form used during this project.",
             text: [
@@ -346,6 +367,7 @@ const DesignPortfolio = [
         layout: "side",
         parts: [
           {
+            _id: 440,
             image: pcPoster,
             imagealt: "A poster used for Privacy Coin",
             text: [
