@@ -11,16 +11,16 @@ function AboutMe(props) {
         {createAboutMeElement(aboutMe[0])}
       </div>
       <div className="aboutme-title-grid-container">
-        <div class="aboutme-title-left">
+        <div className="aboutme-title-left">
           <h2 className="h2-box">{aboutMe[1].title}</h2>
         </div>
-        <div class="aboutme-title-right">
+        <div className="aboutme-title-right">
           <h2 className="h2-box">{aboutMe[2].title}</h2>
         </div>
       </div>
       <div className="aboutme-grid-container">
-        <div class="aboutme-left">{createAboutMeElement(aboutMe[1])}</div>
-        <div class="aboutme-right">{createAboutMeElement(aboutMe[2])}</div>
+        <div className="aboutme-left">{createAboutMeElement(aboutMe[1])}</div>
+        <div className="aboutme-right">{createAboutMeElement(aboutMe[2])}</div>
       </div>
     </div>
   );
