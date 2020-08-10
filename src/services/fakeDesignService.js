@@ -32,6 +32,7 @@ const DesignPortfolio = [
   {
     _id: 10,
     title: "Robo Pop",
+    titleNoSpace: "RoboPop",
     date: "August to September 2018",
     problem:
       "Design installation aimed at making girls (age 12-16) interested in sensory technology and Internet of things.",
@@ -117,6 +118,7 @@ const DesignPortfolio = [
   {
     _id: 20,
     title: "Train Buddy",
+    titleNoSpace: "TrainBuddy",
     date: "September to October 2017",
     problem:
       "To come up with a design for a user group in a certain situation, in our case “immigrants” and “the train”.",
@@ -200,6 +202,7 @@ const DesignPortfolio = [
   {
     _id: 30,
     title: "Access",
+    titleNoSpace: "Access",
     date: "August to October 2018",
     problem:
       "A company that made paper towel and related products wanted rebrand themselves as more inclusive and have that reflected in their products",
@@ -280,6 +283,7 @@ const DesignPortfolio = [
   {
     _id: 40,
     title: "Privacy Coin",
+    titleNoSpace: "PrivacyCoin",
     date: "January to March 2018",
     problem: "Design a tangible interface on the theme of internet safety.",
     design:

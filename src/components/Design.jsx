@@ -12,6 +12,7 @@ function Design(props) {
 function createDesignElement(designElement) {
   return (
     <div className="mainstyle-inner" key={designElement._id}>
+      <div className="design-anchor" id={designElement.titleNoSpace} />
       <h2 className="h2-box"> {designElement.title} </h2>
       <div className="design-side-grid-container">
         <div className="design-side-left">

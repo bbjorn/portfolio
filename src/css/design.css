@@ -63,3 +63,8 @@
   font-style: italic;
   font-size: 14px;
 }
+
+.design-anchor {
+  padding-top: 80px;
+  margin-top: -80px;
+}

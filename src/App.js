@@ -29,7 +29,6 @@ function App() {
               <Route path="/portfolio/aboutme" component={AboutMe} />
               <Route path="/portfolio/notfound" component={NotFound} />
               <Route path="/portfolio/" exact component={FrontPage} />
-
               <Redirect
                 from="/portfolio/index.html"
                 exact
