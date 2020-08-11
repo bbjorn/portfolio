@@ -3,7 +3,7 @@ import React from "react";
 function NotFound(props) {
   return (
     <div className="mainstyle-inner">
-      <h1> Not found </h1>
+      <h1> Page does not exist. </h1>
     </div>
   );
 }
