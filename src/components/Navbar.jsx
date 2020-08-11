@@ -46,7 +46,11 @@ function createDesignNavbar() {
           pathname: "/portfolio/design",
           hash: `#${value.titleNoSpace}`,
         }}
+        spy={true}
+        smooth={true}
+        duration={10000}
         key={index}
+        offset={700}
       >
         {value.title}
       </NavHashLink>
