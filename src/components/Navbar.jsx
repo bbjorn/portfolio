@@ -39,7 +39,7 @@ function Navbar(props) {
 function createDesignNavbar() {
   const designPortfolio = getDesignPortfolio();
   return designPortfolio.map((value, index) => (
-    <li className="navbar-li">
+    <li className="navbar-li" key={index * -1}>
       <NavHashLink
         className="nav-item nav-link"
         exact
@@ -47,11 +47,9 @@ function createDesignNavbar() {
           pathname: "/portfolio/design",
           hash: `#${value.titleNoSpace}`,
         }}
-        spy={true}
         smooth={true}
-        duration={10000}
+        duration={1000}
         key={index}
-        offset={700}
       >
         {value.title}
       </NavHashLink>
