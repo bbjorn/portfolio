@@ -1,11 +1,62 @@
 import React from "react";
 import { getDesignPortfolio } from "./../services/fakeDesignService";
 import "./../css/design.css";
+import useWindowDimensions from "./common/useWindowDimensions";
 
 function Design(props) {
+  const { height, width } = useWindowDimensions();
+  var aspectRatio = width / height;
+  const breakpoint = 0.65; // This should not be hardcoded here.
+  var narrowScreen = aspectRatio < breakpoint;
   const designPortfolio = getDesignPortfolio();
+  if (narrowScreen)
+    return (
+      <div>
+        {designPortfolio.map((value) => createDesignElementNarrow(value))}
+      </div>
+    );
   return (
     <div>{designPortfolio.map((value) => createDesignElement(value))}</div>
+  );
+}
+
+function createDesignElementNarrow(designElement) {
+  return (
+    <div className="mainstyle-inner" key={designElement._id}>
+      <div className="design-anchor" id={designElement.titleNoSpace} />
+      <h2 className="h2-box"> {designElement.title} </h2>
+      <div className="design-top-grid-container">
+        <img
+          src={designElement.image}
+          alt={designElement.imageAlt}
+          className="design-side-img"
+        />
+        {designElement.imagecredit && (
+          <p className="design-credit"> {designElement.imagecredit}</p>
+        )}
+
+        <p> Date - {designElement.date}</p>
+        <p> Problem - {designElement.problem}</p>
+        <p> Design - {designElement.design}</p>
+        <p> Role - {designElement.role}</p>
+        <p>Responsibilities:</p>
+        <ol>
+          {designElement.responsibilities.map((value, index) => (
+            <li key={index}>{value}</li>
+          ))}
+        </ol>
+      </div>
+      <div className="design-side-right"></div>
+
+      {designElement.entires.map((value) => (
+        <React.Fragment key={value._id}>
+          <h2 className="h2-box">
+            {designElement.title + " - " + value.title}{" "}
+          </h2>
+          {createDesignEntryTop(value)}
+        </React.Fragment>
+      ))}
+    </div>
   );
 }
 
