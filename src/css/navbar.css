@@ -1,7 +1,7 @@
 /* Navbar menu */
 .navbar {
   background-color: rgb(145, 160, 175);
-  padding: 8px 0px;
+  padding: 0px 0px;
   width: 100%;
   overflow: hidden;
   top: 0;
@@ -9,16 +9,16 @@
   position: sticky;
 }
 
-/*
-.navbar-collapse {
-  background-color: aqua;
+.navbar-ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
 }
-*/
-/*
-.navbar-nav {
-  background-color: brown;
+
+.navbar-li {
+  float: left;
+  margin: 3px 0px;
 }
-*/
 .nav-item {
   color: white;
   text-align: center;
