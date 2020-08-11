@@ -35,6 +35,7 @@ function Navbar(props) {
   );
 }
 
+/* Shows navbar elements for each project in the design portfolio, only when veiwing the design portfolio. */
 function createDesignNavbar() {
   const designPortfolio = getDesignPortfolio();
   return designPortfolio.map((value, index) => (
