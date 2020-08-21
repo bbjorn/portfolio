@@ -7,17 +7,19 @@
   top: 0;
   position: -webkit-sticky; /* safari */
   position: sticky;
+  text-align: center;
 }
 
 .navbar-ul {
   padding: 0px;
   margin: 0px;
+  display: inline-block;
   list-style-type: none;
 }
 
 .navbar-li {
   float: left;
-  margin: 3px 0px;
+  margin: 1px 0px -1px;
 }
 .nav-item {
   color: white;
