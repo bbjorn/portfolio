@@ -3,7 +3,7 @@ h1 {
   font-family: "bree_serifregular", Helvetica, Arial, sans-serif;
   color: #444444;
   font-size: 44px;
-  line-height: 28px;
+  line-height: 1em;
   font-weight: 500;
   padding: 8px 0px;
 }
