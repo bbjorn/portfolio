@@ -15,7 +15,7 @@ import useWindowDimensions from "./components/common/useWindowDimensions";
 function App() {
   const { height, width } = useWindowDimensions();
   var aspectRatio = width / height;
-  const breakpoint = 0.75;
+  const breakpoint = 0.8;
   var narrowScreen = aspectRatio < breakpoint;
   return (
     <React.Fragment>
