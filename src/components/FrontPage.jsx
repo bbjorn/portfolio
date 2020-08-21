@@ -4,6 +4,8 @@ import "../css/frontpage.css";
 import "../index.css";
 
 function FrontPage(props) {
+  var { narrowScreen } = props;
+  if (narrowScreen) return narrowFrontPage();
   return (
     <React.Fragment>
       <div className="mainstyle-inner">
@@ -32,3 +34,22 @@ function FrontPage(props) {
 }
 
 export default FrontPage;
+
+function narrowFrontPage() {
+  return (
+    <div className="mainstyle-inner">
+      <div>
+        <img
+          className="frontpage-image frontpage-image-narrow"
+          src={mesquare}
+          alt="A portrait of me"
+        />
+        <h1 className="center">Björn Bergqvist</h1>
+        <h3 className="center">Interaction Design Graduate</h3>
+
+        <h3 className="center">Portfolio</h3>
+        <h3 className="center">Selected Examples</h3>
+      </div>
+    </div>
+  );
+}

@@ -39,7 +39,11 @@ function App() {
                 component={() => <AboutMe narrowScreen={narrowScreen} />}
               />
               <Route path="/portfolio/notfound" component={NotFound} />
-              <Route path="/portfolio/" exact component={FrontPage} />
+              <Route
+                path="/portfolio/"
+                exact
+                component={() => <FrontPage narrowScreen={narrowScreen} />}
+              />
 
               <Redirect
                 from="/portfolio/index.html"
