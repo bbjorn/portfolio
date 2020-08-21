@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,6 +13,10 @@ import "./App.css";
 import useWindowDimensions from "./components/common/useWindowDimensions";
 
 function App() {
+  useEffect(() => {
+    document.title = "Björn Bergqvist Portfolio";
+  }, []);
+
   const { height, width } = useWindowDimensions();
   var aspectRatio = width / height;
   const breakpoint = 0.8;
