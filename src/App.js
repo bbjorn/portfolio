@@ -10,8 +10,13 @@ import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
 import "./css/textstyles.css";
 import "./App.css";
+import useWindowDimensions from "./components/common/useWindowDimensions";
 
 function App() {
+  const { height, width } = useWindowDimensions();
+  var aspectRatio = width / height;
+  const breakpoint = 0.75;
+  var narrowScreen = aspectRatio < breakpoint;
   return (
     <React.Fragment>
       <div className="container">
@@ -24,11 +29,18 @@ function App() {
 
           <main className="mainstyle-outer dynamic-scaling">
             <Switch>
-              <Route path="/portfolio/design" component={Design} />
+              <Route
+                path="/portfolio/design"
+                component={() => <Design narrowScreen={narrowScreen} />}
+              />
               <Route path="/portfolio/code" component={Code} />
-              <Route path="/portfolio/aboutme" component={AboutMe} />
+              <Route
+                path="/portfolio/aboutme"
+                component={() => <AboutMe narrowScreen={narrowScreen} />}
+              />
               <Route path="/portfolio/notfound" component={NotFound} />
               <Route path="/portfolio/" exact component={FrontPage} />
+
               <Redirect
                 from="/portfolio/index.html"
                 exact

@@ -1,13 +1,9 @@
 import React from "react";
 import { getDesignPortfolio } from "./../services/fakeDesignService";
 import "./../css/design.css";
-import useWindowDimensions from "./common/useWindowDimensions";
 
 function Design(props) {
-  const { height, width } = useWindowDimensions();
-  var aspectRatio = width / height;
-  const breakpoint = 0.65; // This should not be hardcoded here.
-  var narrowScreen = aspectRatio < breakpoint;
+  var { narrowScreen } = props;
   const designPortfolio = getDesignPortfolio();
   if (narrowScreen)
     return (
