@@ -2,14 +2,19 @@
 .navbar {
   background-color: rgb(145, 160, 175);
   padding: 0px 0px;
+  margin: 0px;
   width: 100%;
   overflow: hidden;
+
+  text-align: center;
+}
+
+.navbar-sticky {
   top: 0;
   position: -webkit-sticky; /* safari */
   position: sticky;
   text-align: center;
 }
-
 .navbar-ul {
   padding: 0px;
   margin: 0px;
@@ -19,7 +24,7 @@
 
 .navbar-li {
   float: left;
-  margin: 1px 0px -1px;
+  margin: -1px 0px;
 }
 .nav-item {
   color: white;
