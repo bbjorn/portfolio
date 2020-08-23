@@ -1,43 +1,32 @@
 /* Navbar menu */
 .navbar {
-  background-color: rgb(145, 160, 175);
-  padding: 0px 0px;
-  margin: 0px;
-  width: 100%;
-  overflow: hidden;
-
   text-align: center;
+  background-color: rgb(145, 160, 175);
+  line-height: 2em;
 }
 
 .navbar-sticky {
   top: 0;
   position: -webkit-sticky; /* safari */
   position: sticky;
-  text-align: center;
-}
-.navbar-ul {
-  padding: 0px;
-  margin: 0px;
-  display: inline-block;
-  list-style-type: none;
 }
 
-.navbar-li {
-  float: left;
-  margin: -1px 0px;
-}
 .nav-item {
   color: white;
   text-align: center;
-  padding: 8px 16px;
   text-decoration: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: inline-block; /* Makes sure that the box covers the entire line height. */
 }
 
 .nav-item:hover {
   background-color: rgb(135, 150, 165);
   text-decoration: none;
+  display: inline-block;
 }
 
 .active {
   background-color: rgb(155, 175, 190);
+  display: inline-block;
 }
