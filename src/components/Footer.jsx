@@ -55,7 +55,7 @@ function Footer(props) {
             </a>
           </div>
         </div>
-        <br /> <br />
+        <br />
         <a className="footer-copyright-link" href="http://www.freepik.com">
           Icons Designed by Freepik
         </a>
