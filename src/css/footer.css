@@ -2,20 +2,46 @@
   background-color: rgb(235, 240, 245);
   padding: 0 0 60px 0;
   width: 100%;
-  height: 140px;
-  margin-top: -140px;
+  height: 190px;
+  margin-top: -190px;
 }
+
 .footer-inside {
   margin: 0 auto;
   padding: 0;
   width: 50%;
+}
+
+.footer-inside-ul {
   list-style-type: none;
+}
+
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . .";
+}
+
+.footer-grid-cell {
+  align-items: center;
+  text-align: center;
 }
 
 .footer-icon {
   height: 18pt;
   width: 18pt;
   margin-right: 8px;
+  /* The lines below makes sure that the image is square*/
+  object-fit: cover;
+  object-position: 0% 0;
+}
+
+.footer-icon-big {
+  align-self: center;
+  height: 32pt;
+  width: 32pt;
   /* The lines below makes sure that the image is square*/
   object-fit: cover;
   object-position: 0% 0;
@@ -32,6 +58,7 @@
   font-family: "bree_serifregular", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 100;
+  text-align: center;
 }
 
 .footer-copyright-link {
