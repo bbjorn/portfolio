@@ -15,7 +15,7 @@ function Code(props) {
           can be found <a href="https://github.com/bbjorn/portfolio">here</a>.
         </p>
       </div>
-      <div className="mainstyle-inner">
+      <div className="mainstyle-inner" id="mountains">
         <h2 className="h2-box">Procedurally Generated Mountains</h2>
         <p>
           This the results of a project I did in an advanced computer graphics

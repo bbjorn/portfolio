@@ -30,3 +30,29 @@
 .frontpage-image-narrow {
   margin-bottom: 50px;
 }
+
+.frontpage-example-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . .";
+}
+
+.frontpage-example {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.frontpage-example-image1 {
+  object-fit: scale-down;
+  height: 8em;
+  width: 90%;
+}
+
+.frontpage-example-image2 {
+  object-fit: cover;
+  height: 8em;
+  width: 90%;
+}
