@@ -3,7 +3,10 @@
   /* Dark grey - Footer-text, h1, h3, p, li*/
   color: #444444;
 
-  /* Bluish light grey - Body Background, Header text, h2-box text colour, Navbar text   */
+  /* White - Header text, h2-box text colour, Navbar text*/
+  color: white;
+
+  /* Bluish light grey - Body Background */
   background-color: rgb(242, 245, 248);
 
   /* Bluish darker light grey - Footer-background */
