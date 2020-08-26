@@ -1,14 +1,10 @@
 import React, { Fragment } from "react";
 import mountains3d from "../img/3dmountainscropped.png";
 import Weather from "./code/Weather";
-
+import "./../css/code.css";
 function Code(props) {
   return (
     <Fragment>
-      <div className="mainstyle-inner">
-        <h2 className="h2-box">Weather App</h2>
-        <Weather />
-      </div>
       <div className="mainstyle-inner">
         <h2 className="h2-box">This Portfolio Website</h2>
         <p>
@@ -19,6 +15,20 @@ function Code(props) {
           using external backends to this page. It has a github repository which
           can be found <a href="https://github.com/bbjorn/portfolio">here</a>.
         </p>
+      </div>
+      <div className="mainstyle-inner">
+        <h2 className="h2-box">Weather App</h2>
+        <p>
+          In order to learn how to code React with a backend I decided to
+          implement a small app that uses an API from{" "}
+          <a href="https://openweathermap.org/">OpenWeather</a>. The icons used
+          are also from OpenWeather. The main focus was on coding during this
+          particular project and I might revisit it and work a bit more on it's
+          presentation.
+        </p>
+        <div className="code">
+          <Weather />
+        </div>
       </div>
       <div className="mainstyle-inner" id="mountains">
         <h2 className="h2-box">Procedurally Generated Mountains</h2>
