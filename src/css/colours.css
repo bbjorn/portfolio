@@ -1,0 +1,24 @@
+/* This is just to keep track of the different colours I am using. */
+.colours {
+  /* Dark grey - Footer-text, h1, h3, p, li*/
+  color: #444444;
+
+  /* Bluish light grey - Body Background, Header text, h2-box text colour, Navbar text   */
+  background-color: rgb(242, 245, 248);
+
+  /* Light-grey - Line in the main style, Footer-link, Navbar Background, Link text */
+  background-color: rgb(145, 160, 175);
+
+  /* Light-grey transperant - H2 box background */
+  background-color: rgb(145, 160, 175);
+  background-color: rgba(145, 160, 175, 0.75);
+
+  /* Bluish darker light grey - Footer-background */
+  background-color: rgb(235, 240, 245);
+
+  /* Light-grey shifted darker - Navbar Hover */
+  background-color: rgb(135, 150, 165);
+
+  /* Light-grey shifted lighter - Navbar Active */
+  background-color: rgb(155, 175, 190);
+}
