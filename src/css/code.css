@@ -1,0 +1,16 @@
+.code {
+  text-align: center;
+}
+
+.weather {
+  background-color: rgb(145, 160, 175);
+  background-color: rgba(145, 160, 175, 0.75);
+  text-align: center;
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+}
+
+.weather-p {
+  color: white;
+}
