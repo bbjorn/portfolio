@@ -1,9 +1,14 @@
 import React, { Fragment } from "react";
 import mountains3d from "../img/3dmountainscropped.png";
+import Weather from "./code/Weather";
 
 function Code(props) {
   return (
     <Fragment>
+      <div className="mainstyle-inner">
+        <h2 className="h2-box">Weather App</h2>
+        <Weather />
+      </div>
       <div className="mainstyle-inner">
         <h2 className="h2-box">This Portfolio Website</h2>
         <p>
