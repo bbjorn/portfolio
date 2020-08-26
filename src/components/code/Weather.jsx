@@ -10,14 +10,14 @@ function Weather(props) {
     weather: [
       {
         id: 0,
-        main: "",
-        description: "",
-        icon: "",
+        main: "Clouds",
+        description: "broke clouds",
+        icon: "04d",
       },
     ],
     base: "",
     main: {
-      temp: 0,
+      temp: 288.15,
       feels_like: 0,
       temp_min: 0,
       temp_max: 0,
@@ -53,7 +53,7 @@ function Weather(props) {
       const city = "Gothenburg";
       const apiKey = `${process.env.REACT_APP_WEATHER_API_KEY}`;
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`
       );
       setData(response.data);
     };
@@ -61,6 +61,7 @@ function Weather(props) {
     fetchData();
   }, []);
 
+  console.log(data);
   return (
     <div className="weather">
       <h2>{data.name}</h2>
