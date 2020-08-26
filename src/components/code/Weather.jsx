@@ -66,7 +66,7 @@ function Weather(props) {
     <div className="weather">
       <h2>{data.name}</h2>
       <img
-        src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} /* To test the icons change the $ to 02d  */
+        src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} /* To test the icons change the $ to 02d  */
         alt="Failed to load weather icon from server."
       />
       <p className="weather-p">
