@@ -62,12 +62,16 @@ function Weather(props) {
   }, []);
 
   return (
-    <div>
-      <p>Weather in {data.name}:</p>
-      <p>
+    <div className="weather">
+      <h2>{data.name}</h2>
+      <img
+        src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} /* To test the icons change the $ to 02d  */
+        alt="Failed to load weather icon from server."
+      />
+      <p className="weather-p">
         {data.weather[0].main} - {data.weather[0].description}
       </p>
-      <p>{kelvinToCelcius(data.main.temp)}</p>
+      <p className="weather-p">{kelvinToCelcius(data.main.temp)} °C</p>
     </div>
   );
 }
@@ -80,5 +84,5 @@ function farenheightToCelcius(temp) {
 }
 
 function kelvinToCelcius(temp) {
-  return Math.floor((temp - 273.15) * 100.0) / 100.0;
+  return Math.floor((temp - 273.15) * 10.0) / 10.0;
 }
